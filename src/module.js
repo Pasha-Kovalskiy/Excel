@@ -1,4 +1,4 @@
-console.log('Module.js');
+console.log('Module.js!!!');
 
 async function start() {
     await Promise.resolve();
