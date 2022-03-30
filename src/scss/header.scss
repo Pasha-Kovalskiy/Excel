@@ -1,0 +1,50 @@
+@import "variables";
+@import "mixins";
+
+
+.header {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: $header-height;
+    padding: 0 4px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__input {
+        margin: 0;
+        margin-left: 20px;
+        padding: 2px 7px;
+        width: 20%;
+        color: black;
+        border: 1px solid transparent;
+        border-radius: 2px;
+        height: 30px;
+        font-size: 18px;
+        line-height: 22px;
+        outline: none;
+        
+        &:hover {
+            border: 1px solid $border-color;
+        }
+
+        &:focus {
+            border: 2px solid #1a73e8;
+        }
+    }
+
+    &__icon-container {
+        display: flex;
+        margin-right: 20px;
+    }
+
+    &__icon {
+        @include icon(#1a73e8);
+    }
+}
+
+.header__icon {
+    color: black;
+}
