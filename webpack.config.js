@@ -47,8 +47,10 @@ module.exports = {
     },
     devtool: isDev ? "source-map" : false,
     devServer: {
-        port: 3000,
+        port: 8000,
         hot: isDev,
+        liveReload: isDev,
+        open: isDev,
     },
     plugins: [
         new HtmlWebpackPlugin({
